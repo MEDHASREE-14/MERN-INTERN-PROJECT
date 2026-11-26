@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>SWIGGY - THE DELIVERY PARTNER</title>
     <style>
@@ -8,6 +7,7 @@
             width: 1500px;
             height: 1105px;
             background-color: #E3602A;
+            border-radius: 20px;
             color: white;
             display: flex;
             flex-wrap: wrap;
@@ -43,84 +43,451 @@
             font-size: 30px;
             color: white;
         }
+
         .nav {
-    display: flex;
-    align-items: center;
-    gap: 35px;
-    position: absolute;
-    top: 40px;
-    right: 100px;
-}
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            position: absolute;
+            top: 40px;
+            right: 100px;
+        }
 
         .image img {
+            border-radius: 20px;
             width: 1100px;
             height: 350px;
-            border:2px solid black
+            border: 2px solid black;
         }
-        
-#box {
-    width: 1100px;
-    height: 380px;
-    background-color: rgb(232, 148, 91);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-    position: absolute;
-    top: 650px;
-    left: 250px;
-    border-radius: 20px;
-    margin-top:40px;
-}
 
-.inner-box {
-    width: 300px;
-    height: 330px;
-    text-align: center;
-    color: black;
-}
+        #box {
+            width: 1100px;
+            height: 380px;
+            background-color: rgb(232, 148, 91);
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+            position: absolute;
+            top: 650px;
+            left: 250px;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
 
-.inner-box img {
-    width: 280px;
-    height: 240px;
-    object-fit: contain;
-}
+        .inner-box {
+            width: 300px;
+            height: 330px;
+            text-align: center;
+            color: black;
+        }
 
+        .inner-box img {
+            width: 280px;
+            height: 240px;
+            border: 5px solid black;
+            border-radius: 20px;
+            object-fit: contain;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        #main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .food-box {
+            background-color: #fad0a0;
+            border: 10px solid black;
+            border-radius: 20px;
+            width: 1500px;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .fb1 {
+            border: 5px solid black;
+            width: 150px;
+            height: 190px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .fb1 img {
+            width: 100%;
+            height: 125px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .fb1 p {
+            font-size: 20px;
+            color: blue;
+            margin-top: 8px;
+            margin-bottom: 0px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .app-image {
+            width: 1400px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .cities-section {
+            width: 100%;
+            max-width: 1500px;
+            box-sizing: border-box;
+            margin: 60px auto;
+            padding: 0 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        .cities-section h2 {
+            font-size: 32px;
+            color: #171A20;
+            margin-bottom: 20px;
+        }
+
+        .cities-box {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .city {
+            width: 100%;
+            box-sizing: border-box;
+            height: 72px;
+            border: 2px solid #DDDDDD;
+            border-radius: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #454950;
+            font-size: 19px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .show-more {
+            color: #FC6A35;
+        }
+
+
+        .footer {
+            width: 100%;
+            min-height: 600px;
+            background-color: #F1F1F5;
+            display: flex;
+            justify-content: center;
+            padding: 70px 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .footer-container {
+            width: 1200px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1.3fr;
+            gap: 45px;
+        }
+
+        .footer-logo img {
+            width: 70px;
+            height: 70px;
+            vertical-align: middle;
+        }
+
+        .footer-logo h2 {
+            display: inline-block;
+            color: #E3602A;
+            font-size: 35px;
+            margin-left: 10px;
+        }
+
+        .footer-logo p {
+            font-size: 20px;
+            color: #686B78;
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        .footer-column h3 {
+            font-size: 22px;
+            color: #171A20;
+            margin-bottom: 25px;
+        }
+
+        .footer-column a {
+            display: block;
+            text-decoration: none;
+            color: #686B78;
+            font-size: 19px;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+        .footer-column a:hover {
+            color: #E3602A;
+        }
+
+        .footer-column select {
+            width: 170px;
+            padding: 12px;
+            border: 1px solid #CCCCCC;
+            border-radius: 12px;
+            font-size: 16px;
+            background-color: transparent;
+            color: #686B78;
+        }
+
+        .social-links {
+            margin-top: 65px;
+        }
+
+        .social-links h3 {
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 12px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #454950;
+        }
     </style>
 </head>
 
 <body>
-<div id="outer-box">
-    <div class="logo">
-        <img src="/spotify/Screenshot 2026-11-25 101845.png">
-        <h2>Swiggy</h2>
+    <div id="outer-box">
+        <div class="logo">
+            <img src="/spotify/Screenshot 2026-11-25 101845.png">
+            <h2>Swiggy</h2>
+        </div>
+        <nav class="nav">
+            <a style="color: white; font-family:Arial, sans-serif; font-size:20px;"
+                href="https://www.swiggy.com/corporate/">About us</a>
+            <a style="color: white; font-family:Arial, sans-serif; font-size:20px ;"
+                href="https://www.swiggy.com/support">Support</a>
+            <a style="color: white; font-family:Arial, sans-serif; font-size:20px ;"
+                href="https://partner.swiggy.com/">Partner with us</a>
+            <a style="background-color: black; color: white; border-radius:10px;font-family:Arial, sans-serif; font-size:20px ; padding:10px;"
+                href="/Swiggy/sign in.html">Sign in</a>
+        </nav>
+        <div class="image">
+            <img src="/spotify/Screenshot 2026-11-25 102914.png">
+        </div>
+
+        <p>Order food & groceries. Discover<br>best restaurants. Swiggy it!</p>
+        <div id="box">
+            <div class="inner-box">
+                <h2>FOOD DELIVERY PARTNER</h2>
+                <img src="/swiggy images/Screenshot 2026-11-25 110554.png">
+            </div>
+            <div class="inner-box">
+                <h2>INSTAMART</h2>
+                <img src="/swiggy images/Screenshot 2026-11-25 110632.png">
+            </div>
+            <div class="inner-box">
+                <h3>DINEOUT</h3>
+                <img src="/swiggy images/Screenshot 2026-11-25 110708.png">
+            </div>
+        </div>
+    </div><br><br>
+    <h2 style="font-family: Arial,sans-serif;background-color: rgb(241, 163, 217);text-align: center;">OUR BEST FOOD OPTIONS</h2>
+    <div id="main">
+        <div class="food-box">
+            <div class="fb1">
+                <img src="/food/Screenshot 2026-11-26 071746.png">
+                <p>Pongal</p>
+            </div>
+
+            <div class="fb1">
+                <img src="/food/Screenshot 2026-11-26 071804.png">
+                <p>Kichadi</p>
+            </div>
+            <div class="fb1">
+                <img src="/food/Screenshot 2026-11-26 071817.png">
+                <p>Appam</p>
+            </div>
+            <div class="fb1">
+                <img src="/food/Screenshot 2026-11-26 071832.png">
+                <p>Idli</p>
+            </div>
+            <div class="fb1">
+                <img src="/food/Screenshot 2026-11-26 073451.png">
+                <p>Vada</p>
+            </div>
+            <div class="fb1">
+                <img src="/food/Screenshot 2026-11-26 073459.png">
+                <p>Parotta</p>
+            </div>
+            <div class="fb1">
+                <img src="/food/Screenshot 2026-11-26 073756.png">
+                <p>Poori</p>
+            </div>
+        </div>
     </div>
-    <nav class = "nav">
-        <a style="color: white; font-family:Arial, sans-serif; font-size:20px;" href="https://www.swiggy.com/corporate/">About us</a>
-        <a style="color: white; font-family:Arial, sans-serif; font-size:20px ;" href="https://www.swiggy.com/support">Support</a>
-        <a style="color: white; font-family:Arial, sans-serif; font-size:20px ;" href="https://partner.swiggy.com/">Partner with us</a>
-        <a style="background-color: black; color: white; font-family:Arial, sans-serif; font-size:20px ; padding:5px;" href="/images/Swiggy.html/sign in.html">Sign in</a>
-    </nav>
-    <div class="image">
-        <img src="/spotify/Screenshot 2026-11-25 102914.png">
+    <h2 style="font-family: Arial,sans-serif;background-color: rgb(241, 163, 217);text-align: center;">SHOP GROCERIES ON INSTAMART</h2>
+    <div id="main">
+        <div class="food-box">
+            <div class="fb1">
+                <img src="/groceries/Screenshot 2026-11-26 072619.png">
+                <p> Fresh Vegetables</p>
+            </div>
+            <div class="fb1">
+                <img src="/groceries/Screenshot 2026-11-26 072629.png">
+                <p> Fresh Fruits</p>
+            </div>
+            <div class="fb1">
+                <img src="/groceries/Screenshot 2026-11-26 072639.png">
+                <p>Dairy,Eggs and Breads</p>
+            </div>
+            <div class="fb1">
+                <img src="/groceries/Screenshot 2026-11-26 072646.png">
+                <p>Rice,Atta and Dals</p>
+            </div>
+            <div class="fb1">
+                <img src="/groceries/Screenshot 2026-11-26 073625.png">
+                <p>Masalas and Dry fruits</p>
+            </div>
+            <div class="fb1">
+                <img src="/groceries/Screenshot 2026-11-26 073631.png">
+                <p>Oils and Ghee</p>
+            </div>
+            <div class="fb1">
+                <img src="/groceries/Screenshot 2026-11-26 073806.png">
+                <p>Sweet tooth</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <img class="app-image" src="/groceries/Screenshot 2026-11-26 082320.png">
+    <br>
+    <div class="cities-section">
+
+        <h2 style="background-color: rgb(241, 163, 217);text-align: center;">Cities with food delivery</h2>
+
+        <div class="cities-box">
+
+            <div class="city">Order food online in Bangalore</div>
+
+            <div class="city">Order food online in Gurgaon</div>
+
+            <div class="city">Order food online in Hyderabad</div>
+
+            <div class="city">Order food online in Delhi</div>
+
+            <div class="city">Order food online in Mumbai</div>
+
+            <div class="city">Order food online in Pune</div>
+
+            <div class="city">Order food online in Kolkata</div>
+
+            <div class="city">Order food online in Chennai</div>
+
+            <div class="city">Order food online in Ahmedabad</div>
+
+            <div class="city">Order food online in Chandigarh</div>
+
+            <div class="city">Order food online in Jaipur</div>
+
+            <div class="city show-more">Show More ﹀</div>
+
+        </div>
+
     </div>
 
-    <p>Order food & groceries. Discover<br>best restaurants. Swiggy it!</p>
-    <div id="box">
-        <div class = "inner-box">
-            <h2>FOOD DELIVERY PARTNER</h2>
-            <img src="/swiggy images/Screenshot 2026-11-25 110554.png">
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-logo">
+                <img src="/spotify/Screenshot 2026-11-25 101845.png">
+                <h2>Swiggy</h2>
+                <p>2026 Swiggy Limited</p>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Company</h3>
+                <a href="#">About Us</a>
+                <a href="#">Swiggy Corporate</a>
+                <a href="#">Careers</a>
+                <a href="#">Team</a>
+                <a href="#">Swiggy One</a>
+                <a href="#">Swiggy Instamart</a>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Contact us</h3>
+                <a href="#">Help & Support</a>
+                <a href="#">Partner With Us</a>
+                <a href="#">Ride With Us</a>
+
+                <br><br>
+
+                <h3>Legal</h3>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Available in:</h3>
+                <a href="#">Bangalore</a>
+                <a href="#">Gurgaon</a>
+                <a href="#">Hyderabad</a>
+                <a href="#">Delhi</a>
+                <a href="#">Mumbai</a>
+                <a href="#">Pune</a>
+
+                <select>
+                    <option>685 cities</option>
+                    <option>Chennai</option>
+                    <option>Coimbatore</option>
+                    <option>Madurai</option>
+                </select>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Life at Swiggy</h3>
+                <a href="#">Explore With Swiggy</a>
+                <a href="#">Swiggy News</a>
+                <a href="#">Snackables</a>
+
+                <div class="social-links">
+                    <h3>Social Links</h3>
+                    <a href="#">in</a>
+                    <a href="#">◎</a>
+                    <a href="#">f</a>
+                    <a href="#">℗</a>
+                    <a href="#">♥</a>
+                </div>
+            </div>
+
         </div>
-        <div class = "inner-box">
-            <h2>INSTAMART</h2>
-            <img src="/swiggy images/Screenshot 2026-11-25 110632.png">
-        </div>
-        <div class = "inner-box">
-            <h3>DINEOUT</h3>
-            <img src="/swiggy images/Screenshot 2026-11-25 110708.png">
-        </div>
-    </div>
-</div>
+
+    </footer>
+
 </body>
 
 </html>
